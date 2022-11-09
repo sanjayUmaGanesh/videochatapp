@@ -37,7 +37,7 @@ app.get("/:room", (req, res) => {
     res.render("index", { roomId: req.params.room });
 });
 
-app.post("/send-email",(req,res)=>{
+app.post("/send-mail",(req,res)=>{
     const to = req.body.to;
     const url = req.body.url;
     const mailData = {
